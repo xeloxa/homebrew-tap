@@ -1,26 +1,26 @@
 class S3finder < Formula
   desc "AI-Powered S3 Bucket Enumeration Tool"
   homepage "https://github.com/xeloxa/s3finder"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-darwin-arm64.tar.gz"
-      sha256 "76915f3d08674de7819a43ef04fe9819d7b3b4f55c08b7e8e63874a1b0039b02"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.3/s3finder-v1.0.3-darwin-arm64.tar.gz"
+      sha256 "ecb3f31c4716c46ce9d4fd5387857c80b71f345b33bfe5ba4a8646bee55cfc38"
     else
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-darwin-amd64.tar.gz"
-      sha256 "2ecc3686345fbd6e77061cb614097e833e5849a5b32f7c0590896220e542f61c"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.3/s3finder-v1.0.3-darwin-amd64.tar.gz"
+      sha256 "10d76643291f2c4f30c7d7b73e41e3ea4e10185731379ca6f23b684cd3ef443d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-linux-arm64.tar.gz"
-      sha256 "931b16a6ed60ce3f530c694889a314078317cbc5ffa6063a798933743dcf68bb"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.3/s3finder-v1.0.3-linux-arm64.tar.gz"
+      sha256 "82736bbf58bde30988e12805451ed574f74048e5d13b1ab1cee9e943b4890e52"
     else
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-linux-amd64.tar.gz"
-      sha256 "2974beada4c8c2e0c833c5a7713422cd232e2acfc6f332c45d704e46887ec593"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.0.3/s3finder-v1.0.3-linux-amd64.tar.gz"
+      sha256 "0c0c0d3ba0d42059333e09f36b1e9755d886774ed6a3fc478cd78e494b06d643"
     end
   end
 
