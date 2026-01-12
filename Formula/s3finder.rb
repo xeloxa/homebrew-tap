@@ -7,20 +7,20 @@ class S3finder < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-darwin-arm64.tar.gz"
-      sha256 "416c5e8abc2ca1ff072af32e76b43d2d4e5fb4e11b13a887f9ed5b03241651c8"
+      sha256 "76915f3d08674de7819a43ef04fe9819d7b3b4f55c08b7e8e63874a1b0039b02"
     else
       url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-darwin-amd64.tar.gz"
-      sha256 "3a6a8ac53f8938c482d46ee922d1459f7e12e2c4df829edb8290c5559fe0a351"
+      sha256 "2ecc3686345fbd6e77061cb614097e833e5849a5b32f7c0590896220e542f61c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-linux-arm64.tar.gz"
-      sha256 "ef374c28223547981c40708cd4d5655cd55234eed40dd9c1d73e83fbfcdfe7a0"
+      sha256 "931b16a6ed60ce3f530c694889a314078317cbc5ffa6063a798933743dcf68bb"
     else
       url "https://github.com/xeloxa/s3finder/releases/download/v1.0.2/s3finder-v1.0.2-linux-amd64.tar.gz"
-      sha256 "d2f42fc6ef14711749ed0424404fa10121e72d8f11b30f6af7a06d7130fd6a8a"
+      sha256 "2974beada4c8c2e0c833c5a7713422cd232e2acfc6f332c45d704e46887ec593"
     end
   end
 
