@@ -5,21 +5,21 @@
 class S3finder < Formula
   desc "AI-powered S3 bucket enumeration tool"
   homepage "https://github.com/xeloxa/s3finder"
-  version "1.3.0"
+  version "1.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.0/s3finder_1.3.0_darwin_amd64.tar.gz"
-      sha256 "93d83f6b7d0c3cb7ff961ac009a3bb5bb2b0aaf62aa7a725426c6cabbdea103e"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.1/s3finder_1.3.1_darwin_amd64.tar.gz"
+      sha256 "83c8aa434afab6e626f019a07aa9372a00fe946a00c21e269a6d7953cd1f0703"
 
       def install
         bin.install "s3finder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.0/s3finder_1.3.0_darwin_arm64.tar.gz"
-      sha256 "3d9c01025dcdca0b0a50a0be3e3865f983124bbef7604dda80f085d3259d304f"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.1/s3finder_1.3.1_darwin_arm64.tar.gz"
+      sha256 "ccf1b20268ff5aab22a849937ac361b9b24c9e83ec48d7c34e33d9b544be2a00"
 
       def install
         bin.install "s3finder"
@@ -29,15 +29,15 @@ class S3finder < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.0/s3finder_1.3.0_linux_amd64.tar.gz"
-      sha256 "1f2b0727c0099ceca4363e1501a971d4ad9d733e5a5bd27c2bb8b3607b5e848e"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.1/s3finder_1.3.1_linux_amd64.tar.gz"
+      sha256 "6974bd611249d1a77a22dbc7880fc23a0a5de81cc090610729f3429ef4a458eb"
       def install
         bin.install "s3finder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.0/s3finder_1.3.0_linux_arm64.tar.gz"
-      sha256 "40b7252cb202b762cb3a40feb1d7ce694d39091b57eabdc47b16f01edbde3c43"
+      url "https://github.com/xeloxa/s3finder/releases/download/v1.3.1/s3finder_1.3.1_linux_arm64.tar.gz"
+      sha256 "454d593d927df9c4eec7781b2e0b06fd0ee49027ca2c819207eb61777a0898c6"
       def install
         bin.install "s3finder"
       end
