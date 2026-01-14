@@ -11,7 +11,7 @@ class S3finder < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/xeloxa/s3finder/releases/download/v1.2.4/s3finder_1.2.4_darwin_amd64.tar.gz"
-      sha256 "485646861f9742fdf0aa7456541c907cf2922d6101ef3a26a0fcd0ee845bbf18"
+      sha256 "621c5eacc4184497f2e26c5ca7c6dcdec57c0542c7feb4c0140d012bef33cb2c"
 
       def install
         bin.install "s3finder"
@@ -19,7 +19,7 @@ class S3finder < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/xeloxa/s3finder/releases/download/v1.2.4/s3finder_1.2.4_darwin_arm64.tar.gz"
-      sha256 "ef2317b3e47f2ac5d901bbea137149cc3e16f0fddb8e0d8ffbd686ac4a2e2788"
+      sha256 "de8ae77355b038d72ed251bfada2771898e64667a25c9d75164563277ec4a355"
 
       def install
         bin.install "s3finder"
@@ -30,14 +30,14 @@ class S3finder < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/xeloxa/s3finder/releases/download/v1.2.4/s3finder_1.2.4_linux_amd64.tar.gz"
-      sha256 "5237b5937a15227f153d9f86f02645a71dcfbff540f03d0013493916a90999bd"
+      sha256 "01e2a5130375249c7a17d429ab5990d86ec98eedc6cf2b5d3fadc02d3e52dc5b"
       def install
         bin.install "s3finder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/xeloxa/s3finder/releases/download/v1.2.4/s3finder_1.2.4_linux_arm64.tar.gz"
-      sha256 "7f2f36af9083017cf2b913c29c964bd444c96732bfe4080e6d741c8d9b795d81"
+      sha256 "f76a4d7a6a71e6692ca9ad0b71a80d142ee885e7b9df6aee88cff8edfc6a9c05"
       def install
         bin.install "s3finder"
       end
